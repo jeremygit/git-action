@@ -15,6 +15,6 @@ jobs:
         with:
           who-to-greet: 'Somebody'
       - name: Run My Action from My Repo With Output
-        run: echo "The time was ${{ steps.ID.outputs.time "
+        run: echo "The time was ${{ steps.ID.outputs.time }}"
 
       
