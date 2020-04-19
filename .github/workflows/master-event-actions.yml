@@ -1,0 +1,20 @@
+name: Master Branch Event Actions
+
+on:
+  push:
+    branches:
+      - 'master'
+jobs:
+  myaction: # id of jobs: myaction
+    name: Run My Action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: jeremygit/git-action@v1
+        id: ID
+        name: Run My Action from My Repo With Input
+        with:
+          who-to-greet: 'Somebody'
+      - name: Run My Action from My Repo With Output
+        run: echo "The time was ${{ steps.ID.outputs.time "
+
+      
