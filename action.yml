@@ -1,0 +1,14 @@
+# This file defines the who-to-greet input and time output. It also tells the action runner how to start running this JavaScript action.
+name: 'Hello World'
+description: 'Great someone and record the time'
+inputs:
+  who-to-greet: # id of input
+  description: 'Who to greet'
+  required: true
+  default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'
