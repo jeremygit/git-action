@@ -16,6 +16,9 @@ const github = require('@actions/github');
 try {
   const nameToGreet = core.getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}`);
+  const someSecret = core.getInput('some-secret');
+  console.log(`Some Secret ${someSecret}`);
+
   const time = (new Date()).toTimeString();
   core.setOutput('time', time);
   const payload = JSON.stringify(github.context.payload, undefined, 2);
