@@ -9,7 +9,7 @@ jobs:
     name: Run My Action
     runs-on: ubuntu-latest
     steps:
-      - uses: jeremygit/git-action@v1
+      - uses: jeremygit/git-action@master
         id: ID
         name: Run My Action from My Repo With Input
         with:
